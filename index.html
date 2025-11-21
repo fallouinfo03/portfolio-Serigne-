@@ -1,11 +1,132 @@
 <!DOCTYPE html>
-<html>
-  <head>
+<html lang="fr">
+<head>
     <meta charset="UTF-8">
-    <title>Portfolio Serigne</title>
-  </head>
-  <body style="font-family: Arial; padding: 40px;">
-    <h1>🎉 Mon site portfolio fonctionne !</h1>
-    <p>Bienvenue sur mon portfolio.</p>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Serigne</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f9fa;
+        }
+        header {
+            background: #0d6efd;
+            color: white;
+            padding: 15px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 1.4rem;
+        }
+        nav a {
+            margin-left: 20px;
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .hero {
+            padding: 60px 30px;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+        .hero p {
+            font-size: 1.2rem;
+            color: #444;
+        }
+        .section {
+            padding: 40px 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+        .card {
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+        }
+        .card h3 {
+            margin-top: 0;
+        }
+        footer {
+            text-align: center;
+            padding: 15px;
+            background: #e9ecef;
+            color: #555;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Portfolio Serigne</h1>
+    <nav>
+        <a href="#projets">Projets</a>
+        <a href="#apropos">À propos</a>
+        <a href="#cv">CV</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Bienvenue sur mon portfolio 👋</h2>
+    <p>Étudiant en Science des données appliquées | Passionné par la data, l’IA & la santé</p>
+</section>
+
+<section class="section" id="projets">
+    <h2>📊 Projets</h2>
+
+    <div class="card">
+        <h3>Analyse des temps d’attente aux urgences (Québec)</h3>
+        <p>Analyse complète des données d’urgence du Québec (2024) : data cleaning, outliers, visualisations, KPIs.</p>
+        <p><strong>Technos :</strong> Python, Pandas, Matplotlib</p>
+    </div>
+
+    <div class="card">
+        <h3>Java – Gestionnaire de Contacts</h3>
+        <p>Application console en Java pour gérer une base de contacts avec MySQL & JDBC.</p>
+        <p><strong>Technos :</strong> Java, MySQL</p>
+    </div>
+
+    <div class="card">
+        <h3>Big Data – Hadoop MapReduce</h3>
+        <p>Traitement de grands fichiers distribués pour extraire des statistiques.</p>
+        <p><strong>Technos :</strong> Hadoop, MapReduce</p>
+    </div>
+
+</section>
+
+<section class="section" id="apropos">
+    <h2>👨‍🎓 À propos</h2>
+    <p>Je suis étudiant en Sciences des données appliquées au Canada. Je me spécialise dans l’analyse de données, les outils de visualisation et l’IA appliquée.</p>
+</section>
+
+<section class="section" id="cv">
+    <h2>📄 CV</h2>
+    <p><a href="#" target="_blank">Télécharger mon CV</a> (ajoute ton fichier PDF plus tard)</p>
+</section>
+
+<section class="section" id="contact">
+    <h2>📬 Contact</h2>
+    <p>Email : ton-email@example.com</p>
+    <p>GitHub : <a href="https://github.com/fallouinfo03" target="_blank">fallouinfo03</a></p>
+</section>
+
+<footer>
+    © 2025 - Portfolio Serigne
+</footer>
+
+</body>
 </html>
